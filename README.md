@@ -18,7 +18,7 @@ Um aplicativo Android simples e intuitivo para conversão instantânea entre as 
 
 |                   Interface Principal                    |                 Ícone do Projeto                 |
 |:--------------------------------------------------------:|:------------------------------------------------:|
-| <img src="screenshots/app_design_temp2.png" width="300"> | <img src="screenshots/app_icon.png" width="300"> |
+| <img src="screenshots/app_design_temp2.png" width="300"> | <img src="screenshots/app_icon.png" width="150"> |
 
 ---
 
