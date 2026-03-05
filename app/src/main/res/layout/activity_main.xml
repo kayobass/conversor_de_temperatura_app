@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#5A5959"
+        android:elevation="4dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Conversor de Temperatura"
+        app:titleMargin="5dp"
+        app:titleTextColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/inp_temperatura"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="65dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Insira o valor da Temperatura"
+        android:inputType="number|numberDecimal|numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/button_celsius"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Converter em ºC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_fahren"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_temperatura"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <Button
+        android:id="@+id/button_fahren"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Converter em ºF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_celsius"
+        app:layout_constraintTop_toBottomOf="@+id/inp_temperatura"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <TextView
+        android:id="@+id/txt_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:padding="2dp"
+        android:textColor="#D76136"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_fahren"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_semvalor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="3dp"
+        android:textColor="#BD1A1A"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/inp_temperatura"
+        app:layout_constraintTop_toBottomOf="@+id/inp_temperatura" />
+
+    <ImageButton
+        android:id="@+id/ibt_lixeira"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Botão de limpeza"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_resultado"
+        app:layout_constraintVertical_bias="0.15"
+        app:srcCompat="@drawable/baseline_delete_24"
+        app:tint="#E43737" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
